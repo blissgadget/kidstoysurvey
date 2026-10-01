@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FREE Kids' Toy Giveaway — Take Our 2-Minute Parent Survey</title>
+<meta name="description" content="Take our 2-minute parent survey & you may qualify to receive a FREE Musical Steering Wheel Racing Car Toy. 2,000+ toys available while supplies last.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--red:#e02b2b;--red-dark:#b31f1f;--green:#1f9d3a;--dark:#111;--bg:#f4f6fb;--card:#fff}
+body{font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:#222;line-height:1.6}
+.screen{display:none;min-height:100vh}
+.screen.active{display:block}
+.wrap{max-width:680px;margin:0 auto;padding:16px}
+.header-img{width:100%;display:block;max-height:220px;object-fit:cover;border-radius:0 0 12px 12px}
+.card{background:var(--card);border-radius:14px;box-shadow:0 4px 18px rgba(0,0,0,.08);padding:24px 20px;margin:16px 0}
+h1{font-size:1.6rem;color:#000;font-weight:800;line-height:1.3;text-align:center}
+h2{font-size:1.25rem;color:#000;font-weight:800;margin:18px 0 8px}
+h3{font-size:1.05rem;color:#000;font-weight:800;margin:16px 0 6px}
+p{margin:10px 0}
+.sub{font-size:1.05rem;font-weight:600;color:#333;text-align:center;margin:12px 0}
+.toy-img{width:100%;max-width:420px;display:block;margin:14px auto;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,.15)}
+.center{text-align:center}
+.btn{display:block;width:100%;max-width:420px;margin:18px auto;padding:16px 20px;font-size:1.15rem;font-weight:800;color:#fff;background:linear-gradient(180deg,#ff4b4b,var(--red));border:none;border-radius:50px;cursor:pointer;text-align:center;text-decoration:none;box-shadow:0 6px 0 var(--red-dark),0 8px 14px rgba(0,0,0,.25);transition:transform .1s}
+.btn:active{transform:translateY(3px);box-shadow:0 3px 0 var(--red-dark)}
+.btn.green{background:linear-gradient(180deg,#2ecc57,var(--green));box-shadow:0 6px 0 #146b26,0 8px 14px rgba(0,0,0,.25)}
+.disclaimer{font-style:italic;font-size:.85rem;color:#555;text-align:center;margin:14px 0}
+.steps{counter-reset:step;margin:10px 0}
+.step{display:flex;align-items:flex-start;gap:12px;margin:10px 0;background:#f0f4ff;border-radius:10px;padding:10px 12px}
+.step b.n{flex:0 0 34px;height:34px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1rem}
+ul.checks{list-style:none;margin:8px 0}
+ul.checks li{margin:6px 0;padding-left:4px}
+ul.checks li::before{content:"✓ ";color:var(--green);font-weight:800}
+/* Survey */
+.progress-bar{height:8px;background:#e2e6ef;border-radius:6px;overflow:hidden;margin-bottom:6px}
+.progress-fill{height:100%;width:0;background:linear-gradient(90deg,#ff4b4b,#ffb347);transition:width .4s}
+.progress-label{font-size:.8rem;color:#666;text-align:right;margin-bottom:8px}
+.q-title{font-size:1.15rem;font-weight:800;color:#000;margin:8px 0 4px}
+.q-note{font-size:.85rem;color:#666;margin-bottom:12px}
+.opt{display:flex;align-items:center;gap:10px;background:#f7f8fc;border:2px solid #e2e6ef;border-radius:10px;padding:12px 14px;margin:8px 0;cursor:pointer;font-weight:600;transition:.15s}
+.opt:hover{border-color:#b9c4ff}
+.opt input{width:20px;height:20px;accent-color:var(--red);flex-shrink:0}
+.opt.selected{border-color:var(--red);background:#fff0f0}
+/* Eligibility form */
+.form-group{margin:14px 0}
+.form-group label{display:block;font-weight:700;margin-bottom:6px;color:#000}
+.form-group input,.form-group select{width:100%;padding:13px 14px;font-size:1rem;border:2px solid #d5dae4;border-radius:10px;background:#fff}
+.form-group input:focus,.form-group select:focus{outline:none;border-color:var(--red)}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:.82rem;color:#444;margin:14px 0}
+.consent input{width:18px;height:18px;margin-top:2px;accent-color:var(--red);flex-shrink:0}
+/* Processing */
+.progress-track{width:100%;height:14px;background:#e7eaf1;border-radius:10px;overflow:hidden;margin-top:18px}
+.progress-slim{height:100%;width:0;background:linear-gradient(90deg,#ffb347,#ff4b4b);transition:width .2s linear}
+.status-text{font-weight:700;color:#000;text-align:center;margin-top:10px}
+/* Modal */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:99;align-items:center;justify-content:center;padding:16px}
+.modal-overlay.show{display:flex}
+.modal{background:#fff;border-radius:16px;max-width:420px;width:100%;padding:26px 20px;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,.3)}
+.modal h2{margin-top:0}
+.adblock-notice{font-size:.72rem;font-weight:800;font-style:italic;color:#000;background:#fff9c4;border:1px solid #f0e68c;border-radius:8px;padding:8px 6px;margin-top:14px;line-height:1.45}
+@media(min-width:768px){.wrap{padding:28px}h1{font-size:2.1rem}.card{padding:32px}}
+</style>
+
+<!-- === YOUR TRACKING SCRIPTS (placed at end of head, as requested) === -->
+<script type="text/javascript">
+    var bZAzJ_fPn_nvvUkc={"it":4634642,"key":"18aac"};
+</script>
+<script src="https://d18k3i06xdslhs.cloudfront.net/04512ab.js"></script>
+<!-- === END TRACKING SCRIPTS === -->
+
+<!-- ================= EMAIL API CONFIG =================
+     Paste your email service capture endpoint below.
+     Examples:
+       GetResponse:  { url: "https://api.getresponse.com/v3/contacts", headers: {"X-Auth-Token":"api-key XXX"}, ... }
+       AWeber / Mailchimp / Brevo / custom webhook — POST lead data as JSON.
+     If left empty, submissions are accepted and logged to the console. -->
+<script>
+window.EMAIL_API_CONFIG = {
+  endpoint: "",            // e.g. "https://your-capture-endpoint.com/subscribe"
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  // Map form fields to your API's expected body format. Adjust keys as needed.
+  mapPayload: function(lead){
+    return { first_name: lead.firstName, email: lead.email, country: lead.country, campaign: "free-toy-giveaway" };
+  }
+};
+</script>
+<!-- ================= END EMAIL API CONFIG ================= -->
+</head>
+<body>
+
+<!-- ============ SCREEN 1: LANDING PAGE ============ -->
+<div id="screen-landing" class="screen active">
+  <img class="header-img" src="https://i.imgur.com/41m2RBM.png" alt="Free Toy Giveaway Header">
+  <div class="wrap">
+    <div class="card">
+      <h1>🎁 2,000+ FREE KIDS' TOYS AVAILABLE</h1>
+      <p class="sub">{How Does Your Child Learn, Play &amp; Stay Focused?}</p>
+      <p class="sub">Take Our 2-Minute Parent Survey &amp; You May Qualify to Receive a FREE Musical Steering Wheel Racing Car Toy.</p>
+      <img class="toy-img" src="https://i.imgur.com/mLFbxV6.jpeg" alt="Musical Steering Wheel Racing Car Toy">
+      <p>Every child learns and plays differently. Some children can stay focused on an activity for a long time. Others quickly move from one activity to another.<br>
+      Some love interactive games, while others prefer puzzles, building, music or imaginative play.</p>
+      <p style="text-align:center"><strong style="color:#000">We want to hear from parents.</strong></p>
+      <p>We're conducting a short parent survey to better understand how children engage with play, including attention, concentration, memory, problem-solving and interactive activities.</p>
+      <p><strong style="color:#000">🎁 And as a thank-you…</strong></p>
+      <p>We're making 2,000+ Musical Steering Wheel Racing Car Toys available for eligible parents to request FREE, while supplies last.</p>
+      <h2>🚗 What Is It?</h2>
+      <p>The Musical Steering Wheel Racing Car Toy is an interactive pretend-driving toy designed to give children an engaging racing and driving experience with steering controls, lights and sounds.</p>
+      <p>It can provide an entertaining way for children to engage in imaginative and interactive play.</p>
+      <h2>🧠 WHAT WE WANT TO LEARN FROM PARENTS</h2>
+      <p>Our survey asks about things you've already observed in your child's everyday life, such as:</p>
+      <ul class="checks">
+        <li>How long your child typically stays focused on an activity</li>
+        <li>What types of play keep your child engaged</li>
+        <li>How your child responds to new challenges</li>
+        <li>How well your child follows simple instructions</li>
+        <li>How your child approaches problems</li>
+        <li>What types of toys and games they enjoy most</li>
+        <li>Which skills parents would like to encourage through play</li>
+      </ul>
+      <p style="text-align:center"><strong style="color:#000">There are no right or wrong answers. We simply want your honest experience.</strong></p>
+      <h2>👇 Ready to Participate?</h2>
+      <div class="steps">
+        <div class="step"><b class="n">1</b><span>Complete our short parent survey</span></div>
+        <div class="step"><b class="n">2</b><span>Tell us what you've observed about your child's play and learning habits</span></div>
+        <div class="step"><b class="n">3</b><span>Check your eligibility for the FREE toy</span></div>
+        <div class="step"><b class="n">4</b><span>If eligible, follow the instructions to request your toy</span></div>
+      </div>
+      <p class="center" style="font-weight:800;color:#000">🎁 START THE 1-MINUTE SURVEY</p>
+      <button class="btn" onclick="show('survey');startSurvey()">TAKE THE PARENT SURVEY →</button>
+      <p class="disclaimer">The free-toy offer is subject to availability and eligibility requirements. More than 2,000 units are being made available for this campaign while supplies last</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SCREEN 2: SURVEY ============ -->
+<div id="screen-survey" class="screen">
+  <div class="wrap">
+    <div class="card" id="survey-intro">
+      <h1>🧠 HOW DOES YOUR CHILD PLAY &amp; LEARN?</h1>
+      <p class="sub">A Quick Parent Survey About Children's Attention, Concentration &amp; Play Habits. It takes approximately 1 minute.</p>
+      <p>There are no right or wrong answers. Please answer based on what you have personally observed about your child.</p>
+      <button class="btn" onclick="startSurveyIntro()">BEGIN SURVEY →</button>
+    </div>
+    <div class="card" id="survey-question" style="display:none">
+      <div class="progress-bar"><div class="progress-fill" id="qProgress"></div></div>
+      <div class="progress-label" id="qLabel"></div>
+      <p class="q-title" id="qTitle"></p>
+      <p class="q-note" id="qNote"></p>
+      <div id="qOptions"></div>
+      <button class="btn" id="qNext" style="display:none" onclick="nextQuestion()">NEXT →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SCREEN 3: SURVEY COMPLETE ============ -->
+<div id="screen-complete" class="screen">
+  <div class="wrap">
+    <div class="card center">
+      <h1>🎉 SURVEY COMPLETE!</h1>
+      <p>Thank you for sharing your experience. Your answers help us better understand how parents observe children's play, engagement and learning habits</p>
+      <p><strong style="color:#000">🎁 You can now check whether you qualify for our FREE Toy Giveaway.</strong></p>
+      <button class="btn" onclick="show('eligibility')">CHECK MY FREE TOY ELIGIBILITY →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SCREEN 4: ELIGIBILITY / EMAIL CAPTURE ============ -->
+<div id="screen-eligibility" class="screen">
+  <div class="wrap">
+    <div class="card" id="eligForm">
+      <h1>You Can Now Check Your FREE TOY GIVEAWAY Eligibility</h1>
+      <p>Thank you for taking the time to complete our parent survey. We're currently making 2,000+ Musical Steering Wheel Racing Car Toys available to eligible participants while supplies last.</p>
+      <p><strong style="color:#000">🎁 To continue, provide your details below:</strong></p>
+      <form id="leadForm" onsubmit="return submitLead(event)">
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" required autocomplete="given-name" placeholder="Enter your first name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" required autocomplete="email" placeholder="Enter your email address">
+        </div>
+        <div class="form-group">
+          <label for="country">Country/Region</label>
+          <select id="country" required><option value="">[ Select ]</option></select>
+        </div>
+        <label class="consent"><input type="checkbox" required id="consent"> I agree to receive information related to this giveaway and future promotional communications. I understand that I can unsubscribe from marketing communications where applicable.</label>
+        <button type="submit" class="btn">CHECK MY ELIGIBILITY →</button>
+      </form>
+    </div>
+    <div class="card center" id="eligProcessing" style="display:none">
+      <p class="status-text" id="procText">Checking availability…</p>
+      <div class="progress-track"><div class="progress-slim" id="procBar"></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ELIGIBILITY POPUP MODAL ============ -->
+<div class="modal-overlay" id="eligModal">
+  <div class="modal">
+    <h2>✅ You're Eligible to Claim A Free Toy</h2>
+    <p>Please Complete a Quick Anti-Bot Verification To Continue</p>
+    <button class="btn" onclick="completeSponsorTask()">CLICK HERE TO COMPLETE NOW</button>
+    <p class="adblock-notice">Disable any adblocker and briefly turn off your anti virus shield to load the verification POPUP</p>
+  </div>
+</div>
+
+<script>
+/* ---------- Screen router ---------- */
+function show(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById('screen-'+id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}
+
+/* ---------- Country list ---------- */
+(function(){const sel=document.getElementById('country');const c=["United States","Canada","United Kingdom","Australia","New Zealand","Ireland","Germany","France","Spain","Italy","Netherlands","Belgium","Switzerland","Austria","Sweden","Norway","Denmark","Finland","Poland","Portugal","Czech Republic","Greece","Hungary","Romania","South Africa","Nigeria","Ghana","Kenya","United Arab Emirates","Saudi Arabia","India","Pakistan","Bangladesh","Philippines","Malaysia","Singapore","Indonesia","Thailand","Vietnam","Japan","South Korea","China","Hong Kong","Taiwan","Brazil","Mexico","Argentina","Chile","Colombia","Peru","Jamaica","Trinidad and Tobago","Other"];
+sel.innerHTML='<option value="">[ Select ]</option>'+c.map(x=>'<option>'+x+'</option>').join('');})();
+
+/* ---------- Survey engine ---------- */
+const QUESTIONS=[
+ {t:"1. What is your child's age?",type:"radio",o:["Under 2","2–3 years","4–5 years","6–7 years","8+ years"]},
+ {t:"2. Approximately how long can your child usually stay engaged with one activity?",type:"radio",o:["Less than 5 minutes","5–10 minutes","10–20 minutes","20–30 minutes","More than 30 minutes","It varies considerably","I have no idea"]},
+ {t:"3. How easily does your child become distracted during play?",type:"radio",o:["Very easily","Somewhat easily","Occasionally","Rarely","Almost never","Have no idea"]},
+ {t:"4. Which activities usually keep your child engaged the longest?",type:"checkbox",note:"Select all that apply.",o:["Cars and racing toys","Building blocks/construction toys","Puzzles","Drawing and coloring","Music and musical toys","Pretend/imaginative play","Outdoor activities","Board or educational games","Tablets/video games","Other"]},
+ {t:"5. How well does your child usually follow simple instructions?",type:"radio",o:["Very well","Well","Sometimes","They often need reminders","I'm not sure"]},
+ {t:"6. How quickly does your child usually notice new sounds, movements or changes while playing?",type:"radio",o:["Very quickly","Quickly","Sometimes","Slowly","I'm not sure"]},
+ {t:"7. Which area would you most like to encourage through play?",type:"checkbox",note:"Choose up to 2.",max:2,o:["Concentration","Attention","Memory","Problem-solving","Hand-eye coordination","Creativity","Following instructions","Confidence","Imaginative play","Other"]},
+ {t:"8. How important are educational or developmental features when you choose toys?",type:"radio",o:["Extremely important","Very important","Somewhat important","Not very important","Not important"]},
+ {t:"9. What type of toy would your child be most excited to receive?",type:"radio",o:["Racing/car toy","Building toy","Puzzle","Musical toy","Pretend-play toy","Educational game","Outdoor toy","Other"]}
+];
+let qIndex=0,answers=[];
+
+function startSurveyIntro(){
+  document.getElementById('survey-intro').style.display='none';
+  document.getElementById('survey-question').style.display='block';
+  qIndex=0;renderQuestion();
+}
+function startSurvey(){qIndex=0;renderQuestion();}
+function renderQuestion(){
+ const q=QUESTIONS[qIndex];
+ document.getElementById('qTitle').textContent=q.t;
+ document.getElementById('qNote').textContent=q.note||"";
+ document.getElementById('qLabel').textContent="Question "+(qIndex+1)+" of "+QUESTIONS.length;
+ document.getElementById('qProgress').style.width=((qIndex)/QUESTIONS.length*100)+"%";
+ document.getElementById('qNext').style.display='none';
+ const box=document.getElementById('qOptions');box.innerHTML='';
+ q.o.forEach((opt,i)=>{
+  const lab=document.createElement('label');lab.className='opt';
+  lab.innerHTML='<input type="'+(q.type==='radio'?'radio':'checkbox')+'" name="q'+qIndex+'" value="'+opt+'"><span>'+opt+'</span>';
+  lab.querySelector('input').addEventListener('change',function(){
+    if(q.type==='radio'){box.querySelectorAll('.opt').forEach(o=>o.classList.remove('selected'));lab.classList.add('selected');document.getElementById('qNext').style.display='block';}
+    else{
+      const checked=[...box.querySelectorAll('input:checked')];
+      if(q.max&&checked.length>q.max){this.checked=false;alert('Please choose up to '+q.max+' options.');return;}
+      lab.classList.toggle('selected',this.checked);
+      if(checked.length>=1)document.getElementById('qNext').style.display='block';else document.getElementById('qNext').style.display='none';
+    }
+  });
+  box.appendChild(lab);
+ });
+}
+function nextQuestion(){
+ const box=document.getElementById('qOptions');
+ const picked=[...box.querySelectorAll('input:checked')].map(i=>i.value);
+ if(!picked.length)return;
+ answers[qIndex]=picked;
+ qIndex++;
+ if(qIndex<QUESTIONS.length)renderQuestion();
+ else{document.getElementById('qProgress').style.width='100%';show('complete');}
+}
+
+/* ---------- Email capture + eligibility simulation ---------- */
+function submitLead(e){
+ e.preventDefault();
+ const lead={firstName:document.getElementById('fname').value.trim(),email:document.getElementById('email').value.trim(),country:document.getElementById('country').value,consent:true,timestamp:new Date().toISOString()};
+ if(window.EMAIL_API_CONFIG&&window.EMAIL_API_CONFIG.endpoint){
+   fetch(window.EMAIL_API_CONFIG.endpoint,{method:window.EMAIL_API_CONFIG.method||'POST',headers:window.EMAIL_API_CONFIG.headers||{'Content-Type':'application/json'},body:JSON.stringify(window.EMAIL_API_CONFIG.mapPayload(lead))}).catch(err=>console.warn('Email API error:',err));
+ }else{
+   console.log('Lead captured (no EMAIL_API_CONFIG.endpoint set yet):',lead);
+ }
+ document.getElementById('eligForm').style.display='none';
+ const proc=document.getElementById('eligProcessing');proc.style.display='block';
+ const bar=document.getElementById('procBar'),txt=document.getElementById('procText');
+ let pct=0;
+ txt.textContent='Checking availability…';
+ const iv=setInterval(()=>{
+   pct+=100/70;bar.style.width=Math.min(pct,100)+'%';
+   if(pct>=40&&pct<100)txt.textContent='Checking eligibility…';
+   if(pct>=100){clearInterval(iv);txt.textContent='Checking eligibility…';setTimeout(()=>document.getElementById('eligModal').classList.add('show'),300);}
+ },100); /* ~7 seconds */
+ return false;
+}
+
+/* ---------- Sponsor task / CPA call ---------- */
+function completeSponsorTask(){
+  document.getElementById('eligModal').classList.remove('show');
+
+  function callCJ(){
+    if (typeof window._CJ === 'function') { window._CJ(); return true; }
+    if (typeof _CJ === 'function') { _CJ(); return true; }
+    return false;
+  }
+
+  if (callCJ()) return;
+
+  // Retry for up to 5 seconds in case the tracking script is still loading
+  let tries = 0;
+  const iv = setInterval(() => {
+    tries++;
+    if (callCJ()) { clearInterval(iv); return; }
+    if (tries >= 50) { // 50 × 100ms = 5s
+      clearInterval(iv);
+      // Fallback: find likely completion callbacks added by the tracking script
+      const candidates = Object.keys(window).filter(k =>
+        typeof window[k] === 'function' &&
+        /cj|complete|convert|lock|unlock|task/i.test(k)
+      );
+      if (candidates.length) { window[candidates[0]](); console.warn('Called fallback:', candidates[0]); }
+      else { console.warn('No _CJ-like function found. Check that https://d18k3i06xdslhs.cloudfront.net/04512ab.js loaded without being blocked.'); }
+    }
+  }, 100);
+}
+</script>
+</body>
+</html>
